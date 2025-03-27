@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio version 2</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            background: linear-gradient(67deg, #8F87F1, #C68EFD, #E9A5F1, #FFC1B4 );
+        }
+
+        body:hover {
+            background: linear-gradient(234deg, #ADB2D4, #FFB8E0, #B7B1F2, #E69DB8);
+        }
+
+        h1 {
+            border: 2px solid black;
+            width: 100%;
+            padding: 2px;
+        }
+
+        /* #section1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+        } */
+
+        img {
+            /* margin-left: 780px; */
+            width: 300px;
+            border-radius: 20px;
+            border: 2px solid white;
+            box-shadow: white;
+        }
+
+        img:hover {
+            transform: scale(1.07);
+            transition: 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>My Portfolio</h1>
+    </center>
+
+    <section id="section1">
+        <h2>About Me</h2>
+        <div>
+            <p>Rimson Laguri</p>
+            <img src="me.png" alt="dasmedawg">
+            <p>Hello , I'm Rimson Laguri . This is my first portfolio , which I'm creating with HTML only.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>My Technical Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <LI>CSS</LI>
+            <li>JAVA SCRIPT</li>
+            <li>REACT</li>
+            <li>NODE.JS</li>
+            <li>REACT.JS</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>My Non-Technical SKills</h2>
+        <ul>
+            <li>COOKING</li>
+            <li>COMMUNICATION SKILL</li>
+            <li>TIME MANAGEMENT</li>
+            <li>ADAPTIBILITY</li>
+            <li>ART</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" rquired><br>
+
+            <label for="phone">Phone No. : </label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" row="5" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
